@@ -1,0 +1,17 @@
+
+
+@media screen and (min-width: 768px) {
+	.page {
+		padding: 50px;
+		margin-bottom: 50px;
+		background: #fff;
+		margin-top: 5%;
+	}
+	.page-hr {
+		width: 100%;
+		background: #000;
+	}
+	ol.breadcrumb {
+		margin-top: 25px;
+	}
+}	

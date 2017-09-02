@@ -1,4 +1,5 @@
 @import url(//fonts.googleapis.com/earlyaccess/notosanstc.css);
+@import url(page.css);
 
 * {
   -webkit-box-sizing: border-box;
@@ -28,7 +29,7 @@ a:hover , .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>.a
 }
 
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
-    background: #d6b161;
+    background: rgba(255,255,255,.3);
     color: #fff;
 }
 
@@ -330,8 +331,7 @@ footer {
     margin-bottom: 150px;
 
     }
-    .mobile-logo {
-    }
+
 }
 
 @media screen and (min-width: 768px) {
@@ -340,7 +340,7 @@ footer {
 header navbar setting
 ---------------------*/
 .logo {
-width: 90px;
+	width: 90px;
 }
 
 .info {
@@ -348,29 +348,29 @@ width: 90px;
     position: absolute;
     left: 45%;
     top: 3px;
-    }
+}
 
-    .info .tel {
+.info .tel {
     position: relative;
    
-    }
-    .info .tel {
+}
+.info .tel {
     display: inline-block;
-width: 100px;
-height: 60px;
-    }
-    .info-text {
+	width: 100px;
+	height: 60px;
+}
+.info-text {
     position: absolute;
     top: 0;
     left: 100px;
     margin-top: 20px;
-    }
+}
 
-    .navbar-nav {
+.navbar-nav {
     margin-top: 10px;
     margin-left: -15px;
     background: #F5C869;
-    }
+}
 .navbar-brand {
    margin-bottom: 15px;
    padding-left: 15px;
@@ -378,28 +378,42 @@ height: 60px;
    height: 105px;
 }
 .nav > li > a {
-width: 90px;
-padding-left: 10px;
-padding-right: 10px;
-   margin: 5px;
-   line-height: 60px;
-   height: 60px;
-   font-size: 18px;
-   font-weight: 100;
-   letter-spacing: 1px;
+	width: 90px;
+	padding-left: 10px;
+	padding-right: 10px;
+   	margin: 5px;
+    line-height: 60px;
+    height: 60px;
+    font-size: 18px;
+    font-weight: 100;
+    letter-spacing: 1px;
 }
 .navbar ul{
 width: 720px;
 text-align: center;
 }
 .nav > li:first-child {
-width: 106px;
-text-align: center;
+	width: 100px;
+	text-align: center;
 }
 .navbar-default .navbar-nav>li>a {
    padding: 5px;
 }
 
+a:hover , .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>.active>a
+,.navbar-default .navbar-nav>.active>a:hover {
+    color: #d6b161;
+    /*background: rgba(255,255,255,.4);*/
+}
+.navbar-default .navbar-nav>.active>a {
+	background: none;
+	color: #000;
+}
+.navbar-default .navbar-nav>.active>a:hover {
+	background: none;
+	color: #fff;
+
+}
     /* ------------
      content setting
      --------------*/
