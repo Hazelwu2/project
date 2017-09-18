@@ -137,16 +137,7 @@ a, .btn {
     font-size: 20px;
     letter-spacing: 1px;
 }
-/* -------
-Google map
---------- */
 
-#map {
-    width: 100%;
-    min-height: 200px;
-    text-align: center;
-    display: inline-block;
-}
 /* -------------
    header nav setting
 ----------------*/
@@ -284,6 +275,8 @@ span.light {
 .subtitle {
     margin-bottom: 10px;
 }
+
+
 
 /*  ---------------
   footer Setting
@@ -516,9 +509,9 @@ a:hover , .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>.a
     .carousel-inner> .item, .carousel-inner > .item.active {
         max-height: 500px;
     }
-    .carousel-inner .item > img {
-        max-height: 400px;
-    }
+    /*.carousel-inner .item > img {
+        max-height: 500px;
+    }*/
     .container {
         /*width: 750px;*/
     }
@@ -541,7 +534,6 @@ a:hover , .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>.a
     }
     .subtitle {
         letter-spacing: 1px;
-        margin-top: 40px;
     }
     .page h1 {
         margin: 0;
@@ -552,7 +544,33 @@ a:hover , .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>.a
     }
     iframe {
         height: 270px;
-        width: 540px;
+        width: 100%;
+    }
+    .carousel-inner > .item:first-child .carousel-caption {
+        left: 6%;
+        bottom: 60%;
+    }
+    .carousel-inner > .item:last-child .carousel-caption {
+        left: 7%;
+        bottom: 55%;
+    }
+    .carousel-caption {
+        left: 54%;
+        bottom: 53%;
+        width: 50%;
+        font-weight: 100;
+        text-shadow: none;
+    }
+    .carousel-caption h4 {
+        font-size: 30px;
+        line-height: 45px;
+        color: #333;
+        letter-spacing: 2px;
+    }
+    .subtitle h3 {
+        display: inline-block;
+        background: rgb(238,238,238);
+        padding: 5px;
     }
 }
 
