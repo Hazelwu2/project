@@ -78,6 +78,7 @@ body {
        -moz-font-smoothing: antialiased; 
     text-rendering: optimizeLegibility;
     background: url(../imgs/bg.png);
+    margin: 0 auto;
 }
 
 i {
@@ -128,7 +129,10 @@ a, .btn {
 }
 
 
-
+.caption {
+    margin-top: 20px;
+    text-align: center;
+}
 /* -------
 Google map
 --------- */
@@ -244,8 +248,11 @@ span.light {
 .contact {
     margin: 50px auto;
 }
+
+.contact h1, .contact h2 {
+    margin: 0;
+}
 .contact h2 {
-    margin-top: 0;
     font-size: 1.7rem;
     font-weight: 100;
     letter-spacing: 1px;
@@ -255,6 +262,7 @@ span.light {
 .contact hr {
     margin: 5px auto;
     text-align: center;
+    border-top-color: #7e7e7e;
 }
 /*  ---------------
   tab Setting
@@ -331,7 +339,25 @@ footer {
     margin-bottom: 150px;
 
     }
+    .nav {
+        padding: 20px;
+        background: rgba(255,255,255,.8);
+    }
 
+    .nav > li:first-child a {
+        text-align: left;
+    }
+
+    .nav > li {
+        height: 40px;
+    }
+    .nav > li:last-child {
+        height: 55px;
+    }
+
+/*    .nav li > a {
+        line-height: 40px;
+    }*/
 }
 
 @media screen and (min-width: 768px) {
@@ -339,6 +365,7 @@ footer {
 /* -------------------
 header navbar setting
 ---------------------*/
+
 .logo {
 	width: 90px;
 }
@@ -346,7 +373,7 @@ header navbar setting
 .info {
     width: 500px;
     position: absolute;
-    left: 45%;
+    left: 60%;
     top: 3px;
 }
 
@@ -378,23 +405,58 @@ header navbar setting
    height: 105px;
 }
 .nav > li > a {
-	width: 90px;
+	width: 100%;
 	padding-left: 10px;
 	padding-right: 10px;
    	margin: 5px;
-    line-height: 60px;
-    height: 60px;
+    line-height: 70px;
+    height: 70px;
     font-size: 18px;
     font-weight: 100;
     letter-spacing: 1px;
 }
+
+.nav .roder{
+    line-height: 21px;
+}
+
+.roder-div {
+    margin-top: 11px;
+}
+
+.nav hr {
+    width: 32%;
+    border: none;
+    border-top: 1px solid;
+    margin: 2px;
+}
 .navbar ul{
-width: 720px;
-text-align: center;
+    text-align: center;
+    width: 102.7%;
+    padding-left: 120px;
+}
+.nav span {
+    display: block;
+    margin-top: -34%;
+    margin-right: -40%;
+}
+
+.roder-div {
+    text-align: left;
+}
+
+.nav > li {
+    margin-right: 12px;
+    margin-left: 12px;
+}
 }
 .nav > li:first-child {
 	width: 100px;
 	text-align: center;
+}
+
+.nav > li:nth-child(4), .nav > li:nth-child(6){
+    width: 110px;
 }
 .navbar-default .navbar-nav>li>a {
    padding: 5px;
@@ -438,7 +500,7 @@ a:hover , .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>.a
         max-height: 400px;
     }
     .container {
-        width: 750px;
+        /*width: 750px;*/
     }
     .navbar-collapse {
         background: none;
@@ -447,17 +509,30 @@ a:hover , .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>.a
     .contact {
         margin-top: 0;
     }
-    .line.item {
-    padding: 20px;
-    }
+
     iframe {
-        height: 260px;
-        width: 350px;
+        height: 270px;
+        width: 540px;
     }
 
-    
-
-
+    .intro .item {
+        height: 200px;
+    }
+    .line.item {
+        padding: 20px;
+        height: 260px;
+    }
+    .subtitle {
+        letter-spacing: 1px;
+        margin-top: 40px;
+    }
+    .page h1 {
+        margin: 0;
+    }
+    .page p {
+        margin: 0;
+        margin-top: 10px;
+    }
 }
 
 @media screen and (min-width: 992px) {
