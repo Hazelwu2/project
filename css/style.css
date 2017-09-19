@@ -276,7 +276,20 @@ span.light {
     margin-bottom: 10px;
 }
 
+.social-media {
+    display: inline-block;
+}
+.social-media a {
+    margin-top: 20px;
+    margin-right: 5px;
+    padding-right: 10px;
+    display: inline-block;
+    width: 50px;
+}
 
+.social-media li {
+    float: left;
+}
 
 /*  ---------------
   footer Setting
@@ -357,10 +370,6 @@ footer .address {
     iframe {
         height: 100%;
         max-width: 100%;
-    }
-
-    .map {
-        text-align: center;
     }
 
     .caption {
