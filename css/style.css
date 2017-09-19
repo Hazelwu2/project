@@ -373,6 +373,27 @@ footer .address {
     .page .title > h2 {
         font-size: 24px;
     }
+    .item > .carousel-caption {
+        width: 50%;
+    }
+    .item:first-child > .carousel-caption {
+        bottom: 40%;
+        left: 0%;
+    }
+    .item:nth-child(2) > .carousel-caption {
+        bottom: 60%;
+        left: 50%;
+    }
+    .item:nth-child(3) > .carousel-caption {
+        bottom: 60%;
+        left: 0%;
+    }
+    .carousel-caption h4 {
+        font-size: 15px;
+        line-height: 25px;
+        text-shadow: none;
+        color: #333;
+    }
     
 }
 
