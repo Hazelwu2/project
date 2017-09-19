@@ -251,7 +251,7 @@ span.light {
     font-size: 1.7rem;
     font-weight: 100;
     letter-spacing: 1px;
-    line-height: 45px;
+    line-height: 35px;
 }
 
 .contact hr {
@@ -355,8 +355,8 @@ footer .address {
     }
 
     iframe {
-        height: 270px;
-        width: 300px;
+        height: 100%;
+        max-width: 100%;
     }
 
     .map {
@@ -377,20 +377,20 @@ footer .address {
         width: 50%;
     }
     .item:first-child > .carousel-caption {
-        bottom: 40%;
+        bottom: 30%;
         left: 0%;
     }
     .item:nth-child(2) > .carousel-caption {
-        bottom: 60%;
+        bottom: 42%;
         left: 50%;
     }
     .item:nth-child(3) > .carousel-caption {
-        bottom: 60%;
+        bottom: 58%;
         left: 0%;
     }
     .carousel-caption h4 {
-        font-size: 15px;
-        line-height: 25px;
+        font-size: 13px;
+        line-height: 18px;
         text-shadow: none;
         color: #333;
     }
