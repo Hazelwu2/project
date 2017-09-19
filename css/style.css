@@ -403,6 +403,9 @@ footer .address {
         text-shadow: none;
         color: #333;
     }
+    .contact {
+        margin-bottom: 0px;
+    }
     
 }
 
@@ -578,11 +581,11 @@ a:hover , .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>.a
     }
     .carousel-inner > .item:first-child .carousel-caption {
         left: 6%;
-        bottom: 60%;
+        bottom: 40%;
     }
     .carousel-inner > .item:last-child .carousel-caption {
-        left: 7%;
-        bottom: 55%;
+        left: 2%;
+        bottom: 67%;
     }
     .carousel-caption {
         left: 54%;
@@ -592,7 +595,7 @@ a:hover , .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>.a
         text-shadow: none;
     }
     .carousel-caption h4 {
-        font-size: 30px;
+        font-size: 32px;
         line-height: 45px;
         color: #333;
         letter-spacing: 2px;
@@ -627,6 +630,36 @@ a:hover , .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>.a
         padding-top: 0;
         
     }
+    .nav > li:first-child {
+        width: auto;
+    }
 
 
+
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    .navbar ul {
+        width: 103.6%;
+    }
+    
+    .page {
+        margin-top: 16%;
+    }
+    .info {
+        left: 53%;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .navbar ul {
+        width: 104.7%;
+    }
+    
+    .page {
+        margin-top: 26%;
+    }
+    .info {
+        left: 39.7%;
+    }
 }
