@@ -403,9 +403,10 @@ footer .address {
         text-shadow: none;
         color: #333;
     }
-    .contact {
+    .index .contact {
         margin-bottom: 0px;
     }
+    
     
 }
 
