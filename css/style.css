@@ -147,8 +147,8 @@ a, .btn {
     margin-left: 15px;
     margin-top: 5px;
     padding: 0;
-    width: 40px;
-    height: 50px;
+    width: 210px;
+    height: 60px;
 }
 .nav > .active {
     color: #d6b161;
@@ -202,8 +202,7 @@ padding-top: 0;
 }
 
 .intro a:first-child {
-display: inline-block;
-    height: 140px;
+    display: inline-block;
 }
 
 .intro a:hover img {
@@ -215,26 +214,6 @@ display: inline-block;
 }
 
 
-.item a > span {
-    position: absolute;
-    top: 63%;
-    right: 3%;
-    letter-spacing: 2px;
-    font-weight: 100;
-    font-size: 18px;
-    background: rgba(0,0,0,.3);
-    padding: 5px;
-    border-radius: 3px;
-    color: #fff;
-}
-
-span.light {
-    color: white;
-}
-.light:hover {
-    color: #d6b161;
-    transition: all .3s;
-}
 
 .intro .facebook a:hover img, .intro .line a:hover img {
     transform: scale(1.1);
@@ -421,9 +400,7 @@ footer .address {
 header navbar setting
 ---------------------*/
 
-.logo {
-	width: 400px;
-}
+
 
 .info {
     width: 500px;
@@ -445,7 +422,7 @@ header navbar setting
     position: absolute;
     top: 0;
     left: 100px;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 .navbar-nav {
@@ -483,7 +460,7 @@ header navbar setting
 
 
 
-.nav hr {
+.roder-div hr {
     width: 32%;
     border: none;
     border-top: 1px solid;
@@ -529,7 +506,6 @@ header navbar setting
 a:hover , .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>.active>a
 ,.navbar-default .navbar-nav>.active>a:hover {
     color: #d6b161;
-    /*background: rgba(255,255,255,.4);*/
 }
 .navbar-default .navbar-nav>.active>a {
 	background: none;
@@ -620,6 +596,38 @@ a:hover , .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>.a
         background: rgb(238,238,238);
         padding: 5px;
     }
+
+    .item-text {
+        position: absolute;
+        top: 50%;
+        right: 0%;
+        padding: 7px;
+        letter-spacing: 1px;
+        font-size: 18px;
+        background: rgba(255,255,255,.3);
+        border-radius: 3px;
+        color: #fff;
+        font-weight: bold;
+        text-shadow: 1px 1px 1px #333;
+    }
+    
+    .spec {
+        padding: 5px 40px 20px 10px;
+    }
+    .item > a > .item-text:hover {
+        color: #d6b161;
+        transition: all .3s;
+    }
+
+    .item-text hr {
+        margin: 0;
+        border: none;
+    }
+    .intro .separate {
+        margin-top: -73%;
+        margin-left: 66%;
+        width: 100%;
+    }
 }
 
 @media screen and (min-width: 992px) {
@@ -649,8 +657,28 @@ a:hover , .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>.a
         width: auto;
     }
 
+    .logo {
+        margin-top: 10px;
+        width: 400px;
+    }
 
+    .intro .col-sm-4:nth-child(3) .item img {
+        min-height: 194px;
+    }
 
+    .item-text {
+        top: 70%;
+        right: 4%;
+    }
+
+    iframe {
+        height: 300px;
+    }
+    
+    .spec {
+        padding-right: 45px;
+        top: 60%;
+    }
 }
 
 @media screen and (min-width: 992px) and (max-width: 1200px) {
@@ -664,6 +692,9 @@ a:hover , .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>.a
     .info {
         left: 53%;
     }
+    
+
+
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
@@ -675,6 +706,87 @@ a:hover , .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>.a
         margin-top: 26%;
     }
     .info {
-        left: 39.7%;
+        left: 47.7%;
     }
+    .logo {
+        margin-top: 5px;
+        width: 270px;
+    }
+    .info .tel {
+        width: 85px;
+    }
+    .info-text {
+        margin: 0;
+        width: 300px;
+        left: 80px;
+        text-align: center;
+    }
+
+    .info-text h4 {
+        margin: 0;
+        padding-top: 7px;
+        padding-left: 10px;
+        font-size: 16px;
+    }
+
+    .info-text strong {
+        font-size: 22px;
+    }
+
+    .intro .item {
+        margin-bottom: 0;
+        width: 240px;
+        height: 150px;
+    }
+
+    iframe {
+        height: 295px;
+    }
+    .carousel-caption h4 {
+        font-size: 28px;
+    }
+    .carousel-inner > .item:first-child .carousel-caption {
+        left: 2%;
+    }
+
+    .intro {
+        margin-bottom: 70px;
+        overflow: hidden;
+    }
+
+    .facebook.item, .line.item {
+        margin-top: 50px;
+    }
+
+    .facebook.item {
+        width: 360px;
+    }
+    
+    .line.item {
+        padding: 0;
+        width: 345px;
+        height: 191px;
+    }
+
+    .intro .col-sm-4:nth-child(3) .item img {
+        height: 150px;
+    }
+    
+    .intro .col-sm-4:nth-child(2) .item-text {
+        top: 65%;
+        right: 10px;
+    }
+    
+    .intro .col-sm-4:nth-child(3) .item-text {
+        right: 12%;
+        top: 65%;
+    }
+    
+    .spec {
+        top: 53%;
+        right: 5%;
+
+    }
+
+
 }
